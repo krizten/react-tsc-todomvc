@@ -1,4 +1,13 @@
-# TypeScript & React TodoMVC Example
+<p align="center">
+    <img src="assets/logo.png" alt="TodoMVC">
+</p>
+
+<h1 align="center">TodoMVC - TypeScript & React</h1>
+
+
+> TodoMVC is a project which offers the same Todo application implemented using MV* concepts in most of the popular JavaScript MV* frameworks of today. For this project, we will be going with the TypeScript & React implementation.
+
+> _[TodoMVC - todomvc.com](http://todomvc.com)_
 
 > TypeScript is a language for application-scale JavaScript development. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Any browser. Any host. Any OS. Open Source.
 
@@ -8,76 +17,68 @@
 
 > _[React - facebook.github.io/react](http://facebook.github.io/react)_
 
-## Learning TypeScript
+<br>
 
-The [TypeScript website](http://typescriptlang.org) is a great resource for getting started.
+# Table of Contents
 
-Here are some links you may find helpful:
+0. [Introduction](#introduction)
+0. [Task One](#task-one)
+0. [Task Two](#task-two)
+1. [Task Three](#task-three)
+2. [Notes](#notes)
 
-* [Tutorial](http://www.typescriptlang.org/Tutorial)
-* [Code Playground](http://www.typescriptlang.org/Playground)
-* [Documentation](https://github.com/Microsoft/TypeScript/wiki)
-* [Applications built with TypeScript](http://www.typescriptlang.org/Samples)
-* [Blog](http://blogs.msdn.com/b/typescript)
-* [Source Code](https://github.com/Microsoft/TypeScript)
+<br>
 
-Articles and guides from the community:
+> ## Introduction
 
-* [Thoughts on TypeScript](http://www.nczonline.net/blog/2012/10/04/thoughts-on-typescript)
-* [ScreenCast - Why I Like TypeScript](https://www.youtube.com/watch?v=Mh5VQVfWTbs)
+Our frontend stack consists of React with TypeScript and various backends using REST and GraphQL APIs. You might have heard of [TodoMVC](http://todomvc.com/). It's a neat project which contains a reference implementation of a simple to-do app written in various JavaScript frameworks, libraries and dialects. The quality of the various implementations vary and your goal will be to improve one of the implementations and to add new features.
 
-Get help from other TypeScript users:
+<br>
 
-* [TypeScript on StackOverflow](http://stackoverflow.com/questions/tagged/typescript)
-* [Forums](https://github.com/Microsoft/TypeScript/issues)
-* [TypeScript on Twitter](http://twitter.com/typescriptlang)
+> ## Task One
 
-_If you have other helpful links to share, or find any of the links above no longer work, please [let us know](https://github.com/tastejs/todomvc/issues)._
+Fork the project from GitHub. The implementation we are interested in is located in [examples/typescript-react](https://github.com/tastejs/todomvc). 
 
-## Learning React
+Start it using:
+```cd examples/typescript-react && npm install && npm build && npm start```
 
-The [React getting started documentation](http://facebook.github.io/react/docs/getting-started.html) is a great way to get started.
+Try to answer the following questions:
 
-Here are some links you may find helpful:
+    1. What would you do differently?
+    2. What's good?
+    3. What's bad?
+    4. Are you missing anything in the tooling department?
 
-* [Documentation](http://facebook.github.io/react/docs/getting-started.html)
-* [API Reference](http://facebook.github.io/react/docs/reference.html)
-* [Blog](http://facebook.github.io/react/blog/)
-* [React on GitHub](https://github.com/facebook/react)
-* [Support](http://facebook.github.io/react/support.html)
+Optionally, if you think it will help you, apply some of your suggestions to the code.
 
-Articles and guides from the community:
+<br>
 
-* [How is Facebook's React JavaScript library](http://www.quora.com/React-JS-Library/How-is-Facebooks-React-JavaScript-library)
-* [React: Under the hood](http://www.quora.com/Pete-Hunt/Posts/React-Under-the-Hood)
+> ## Task Two
 
-Get help from other React users:
+We would like to be able to add labels to each to-do item.
 
-* [React on StackOverflow](http://stackoverflow.com/questions/tagged/reactjs)
-* [Discussion Forum](https://discuss.reactjs.org/)
-
-_If you have other helpful links to share, or find any of the links above no longer work, please [let us know](https://github.com/tastejs/todomvc/issues)._
+1. When entering a new item we want to add one or more labels by adding words like @work or @important to an item.
+2. These labels should not be part of the item title itself, but instead show up right-aligned as badges.
+3. When editing the item (double-click) we want to be able to add, edit or remove labels.
+4. Examples
+    - "Buy groceries @shopping @household"
+      - To-do: "Buy groceries"
+      - Tags: "shopping", "household"
 
 
 
-## Running
+<br>
 
-A standalone TypeScript compiler is available on NPM.
+> ## Task Three
 
-	npm install typescript
+Optional, but bonus points if you write React component tests for your newly added features.
 
-To compile the TypeScript in this project:
+<br>
 
-	# from examples/typescript-react
-	$ ./node_modules/typescript/bin/tsc -p ./js/
+> ## Notes
 
-To be able to run the output JS files in the browser:
+What is important for us is that you document your work by writing proper Git commits (i.e. a clean history that shows us how you work). We care more about high quality work, than delivering lots of features with bad code. Styling does not have to be pixel-perfect.
 
-	# from examples/typescript-react
-	$ ./node_modules/browserify/bin/cmd ./js/app.js -o ./js/bundle.js"
+Have fun with the challenge,
 
-To run the app, spin up an HTTP server (e.g. `python -m SimpleHTTPServer`) and visit http://localhost/.../myexample/.
-Alternatively you can run:
-
-	# from examples/typescript-react
-	$ npm run start
+Team Mercateo
