@@ -12,13 +12,10 @@ const config = {
   },
   output: {
     path: resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    assetModuleFilename: "assets/[hash][ext]",
   },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
-  },
-  output: {
-    assetModuleFilename: "assets/[hash][ext]",
   },
   module: {
     rules: [

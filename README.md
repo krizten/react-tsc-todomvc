@@ -81,7 +81,6 @@ Optionally, if you think it will help you, apply some of your suggestions to the
 * Poor/no comments documenting what certain methods do and how to use them.
 * Type definitions installed as dependencies instead of devDependencies.
 * User interface not properly optimized for mobile view.
-* use of 'var' keyword in TypeScript/ES6 environment.
 * lack of alias for cleaner import statements.
 <br>
 
