@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="assets/logo.png" alt="TodoMVC">
+    <img src="src/assets/logo.png" alt="TodoMVC">
 </p>
 
 <h1 align="center">TodoMVC - TypeScript & React</h1>
