@@ -44,14 +44,58 @@ Start it using:
 
 Try to answer the following questions:
 
-    1. What would you do differently?
-    2. What's good?
-    3. What's bad?
-    4. Are you missing anything in the tooling department?
+1. What would you do differently?
+2. What's good?
+3. What's bad?
+4. Are you missing anything in the tooling department?
 
 Optionally, if you think it will help you, apply some of your suggestions to the code.
+<br><br><br>
+
+<h3>
+	<span style="color:white;background-color:#3b49df;padding:5px 10px">Task One - Solution</span>
+</h3>
+<br>
+
+<h4 style="font-weight:bold">1. What would you do differently?</h4>
+
+* Use a bundler like Webpack to set up development and production build.
+* Ensure project dependencies are up to date.
+* Use a more organized folder structure to separate compiled JS files, TypeScript React components and other utilities methods.
+* Add tests and coverage reports
+* Set up linting, formatting and style guides (Standard, Airbnb, Google, etc).
 
 <br>
+
+<h4 style="font-weight:bold">2. What's good?</h4>
+
+* Use of TypeScript for type inference and to easily detect possible errors during compile-time.
+* Use of components and classes to separate concerns, improve maintainability and readability.
+* Use of custom utility methods instead of importing 3rd party libraries (leading to increased bundle size).
+<br>
+
+<h4 style="font-weight:bold">3. What's bad?</h4>
+
+* No development workflow included.
+* No component tests, integration (e2e) tests, etc.
+* Poor/no comments documenting what certain methods do and how to use them.
+* Type definitions installed as dependencies instead of devDependencies.
+* User interface not properly optimized for mobile view.
+* use of 'var' keyword in TypeScript/ES6 environment.
+* lack of alias for cleaner import statements.
+<br>
+
+<h4 style="font-weight:bold">4. Are you missing anything in the tooling department?</h4>
+
+* Storybook: For component documentation
+* ESLint: code style guide
+* Prettier: format code
+* Husky: ensure code follows style guide/convention before committing
+* Jest & React-Testing-Library: unit testing, snapshots
+* Cypress: Integration (e2e) testing
+* Bundler: Webpack (or CRA for easier setup)
+
+<br><br>
 
 > ## Task Two
 
