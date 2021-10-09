@@ -21,11 +21,33 @@
 
 # Table of Contents
 
-0. [Introduction](#introduction)
-0. [Task One](#task-one)
-0. [Task Two](#task-two)
-1. [Task Three](#task-three)
-2. [Notes](#notes)
+0. [Project Setup](#project-setup)
+1. [Introduction](#introduction)
+2. [Task One](#task-one)
+3. [Task Two](#task-two)
+4. [Task Three](#task-three)
+5. [Notes](#notes)
+
+<br>
+
+> ## Project Setup
+* Clone project repository using -> 
+  ```
+  git clone https://github.com/krizten/react-tsc-todomvc.git
+  ```
+* Install project repository using -> 
+  ```
+  npm install
+  ```
+* To run a local development instance of the project, after installing the dependencies, run the command -> 
+  ```
+  npm run dev
+  ```
+* To build and serve project for production, run the following commands ->
+  ```
+  npm run build
+  npm start
+  ```
 
 <br>
 
@@ -93,6 +115,12 @@ Optionally, if you think it will help you, apply some of your suggestions to the
 * Jest & React-Testing-Library: unit testing, snapshots
 * Cypress: Integration (e2e) testing
 * Bundler: Webpack (or CRA for easier setup)
+
+<br>
+
+<h4 style="font-weight:bold">Optionally, if you think it will help you, apply some of your suggestions to the code.</h4>
+
+[Implementation of setup suggestions](https://github.com/krizten/react-tsc-todomvc/tree/chore-implement-setup-suggestions)
 
 <br><br>
 
