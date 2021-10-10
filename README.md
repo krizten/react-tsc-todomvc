@@ -136,9 +136,14 @@ We would like to be able to add labels to each to-do item.
       - To-do: "Buy groceries"
       - Tags: "shopping", "household"
 
-
-
 <br>
+<h3>
+	<span style="color:white;background-color:#3b49df;padding:5px 10px">Task Two - Solution</span>
+</h3>
+
+[Implementation of Todo Label Feature](https://github.com/krizten/react-tsc-todomvc/tree/feat-todo-labels)
+
+<br><br>
 
 > ## Task Three
 
