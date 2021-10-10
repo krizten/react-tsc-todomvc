@@ -15,13 +15,17 @@ class TodoLabels extends React.Component<ITodoLabelsProps, {}> {
     if (this.props.labels.length) {
       labels = this.props.labels.map((badge: string, index: number) => {
         return (
-          <span key={index} className='badge'>
+          <span data-testid='badge' key={index} className='badge'>
             {badge}
           </span>
         );
       });
     }
-    return <div className='badges-container'>{labels}</div>;
+    return (
+      <div data-testid='badge-container' className='badges-container'>
+        {labels}
+      </div>
+    );
   }
 }
 

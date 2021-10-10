@@ -8,8 +8,12 @@ import { TodoLabels } from "../components/todoLabels";
 describe("The <TodoLabels /> Component", () => {
   const defaultTodoLabels = ["travel", "food"];
 
-  beforeAll(() => {
+  beforeEach(() => {
     render(<TodoLabels labels={defaultTodoLabels} />);
+  });
+
+  it("Should render the component", () => {
+    expect(screen.queryByTestId("badge-container")).toBeDefined();
   });
 
   it("Should render the todo tags and the user will see it", () => {
@@ -17,5 +21,9 @@ describe("The <TodoLabels /> Component", () => {
     expect(screen.getByText(defaultTodoLabels[1])).toBeInTheDocument();
   });
 
-  afterAll(cleanup);
+  it("should only render the todo tags passed to it", () => {
+    expect(screen.queryAllByTestId("badge")).toHaveLength(2);
+  });
+
+  afterEach(cleanup);
 });
