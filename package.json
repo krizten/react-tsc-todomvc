@@ -5,7 +5,8 @@
     "build": "cross-env NODE_ENV=production webpack",
     "start": "serve dist",
     "prettier:check": "prettier --check .",
-    "prettier:fix": "prettier --write"
+    "prettier:fix": "prettier --write",
+    "test": "jest"
   },
   "dependencies": {
     "classnames": "^2.3.1",
