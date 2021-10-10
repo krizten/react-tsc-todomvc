@@ -33,7 +33,12 @@ class TodoItem extends React.Component<ITodoItemProps, ITodoItemState> {
 
   public handleEdit() {
     this.props.onEdit();
-    this.setState({ editText: this.props.todo.title });
+    this.setState({
+      editText: Utils.combineTitleAndLabels(
+        this.props.todo.title,
+        this.props.todo.tags
+      ),
+    });
   }
 
   public handleKeyDown(event: React.KeyboardEvent) {
@@ -101,10 +106,10 @@ class TodoItem extends React.Component<ITodoItemProps, ITodoItemState> {
           />
           <div className='todo-container'>
             <label onDoubleClick={(e) => this.handleEdit()}>
-              {Utils.parseTitleAndLabels(this.props.todo.title).title}
+              {this.props.todo.title}
             </label>
             <TodoLabels
-              labels={Utils.parseTitleAndLabels(this.props.todo.title).labels}
+              labels={this.props.todo.tags}
             />
           </div>
           <button className='destroy' onClick={this.props.onDestroy} />
