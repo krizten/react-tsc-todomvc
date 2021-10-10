@@ -157,6 +157,34 @@ We would like to be able to add labels to each to-do item.
 Optional, but bonus points if you write React component tests for your newly added features.
 
 <br>
+<h3>
+	<span style="color:white;background-color:#3b49df;padding:5px 10px">Task Three - Solution</span>
+</h3>
+
+
+[Component tests, Integration (e2e) tests and Storybook Documentation](https://github.com/krizten/react-tsc-todomvc/tree/chore-tests-and-documentation)
+
+<br>
+<a href="https://github.com/krizten/react-tsc-todomvc/tree/feat-todo-labels">
+  <p align="center">
+      <img src="screenshots/component-test.png" alt="TodoMVC">
+  </p>
+
+  <br>
+
+  <p align="center">
+      <img src="screenshots/e2e-test.png" alt="TodoMVC">
+  </p>
+
+  <br>
+
+  <p align="center">
+      <img src="screenshots/storybook.png" alt="TodoMVC">
+  </p>
+</a>
+
+
+<br>
 
 > ## Notes
 
