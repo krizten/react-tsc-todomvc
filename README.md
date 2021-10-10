@@ -141,6 +141,13 @@ We would like to be able to add labels to each to-do item.
 	<span style="color:white;background-color:#3b49df;padding:5px 10px">Task Two - Solution</span>
 </h3>
 
+<br>
+<a href="https://github.com/krizten/react-tsc-todomvc/tree/feat-todo-labels">
+  <p align="center">
+      <img src="screenshots/todoapp_task-two.png" alt="TodoMVC">
+  </p>
+</a>
+
 [Implementation of Todo Label Feature](https://github.com/krizten/react-tsc-todomvc/tree/feat-todo-labels)
 
 <br><br>
